@@ -1,0 +1,162 @@
+@use '../abstracts/variables' as variable;
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&family=Outfit:wght@300&display=swap');
+
+
+
+h1, h2, h3, h4, a {
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size:9.6rem;
+    font-weight:900;
+    line-height: 8.8rem;
+    background: linear-gradient(90deg, white 0%,white 55%, black 55% , black 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    
+
+    @media(max-width:1275px) {
+        font-size: 7rem;
+        line-height: 6.5rem;
+        background: linear-gradient(90deg,black 0% , black 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+    @media(max-width:767px) {
+        font-size: 6rem;
+        line-height: 5.5rem;
+        background: linear-gradient(90deg,black 0% , black 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+}
+
+h2 {
+    font-size: 6rem;
+    font-weight: 900;
+    line-height: 6rem;
+
+    @media(max-width:1275px) {
+        font-size: 5rem;
+        line-height: 4.5rem;
+    }
+}
+
+h1.location--header__text {
+    font-size: 7rem;
+    font-weight: 900;
+    line-height: 7rem;
+    color: variable.$white;
+
+    span {
+        display: block;
+    }
+
+    @media(max-width:1275px) {
+        font-size: 5.5rem;
+        line-height: 5rem;
+    }
+
+    @media(max-width:767px) {
+        font-size: 5rem;
+        line-height: 4.5rem;
+
+        span {
+            display: inline;
+        }
+    }
+}
+
+h2.location--features__header {
+    font-size: 3.6rem;
+    line-height: 3.6rem;
+    color:variable.$gold;
+
+    @media(max-width:1275px) {
+        font-size: 3.2rem;
+        line-height: 3.2rem;
+    }
+}
+
+h3.footer--header__text {
+    width:16rem;
+    font-size: 2.8rem;
+    line-height: 2.6rem;
+    color:variable.$white;
+
+    span {
+        display: block;
+    }
+
+    @media(max-width:1275px) {
+        font-size: 2.2rem;
+        line-height: 2rem;
+    }
+}
+
+a {
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 2.4rem;
+    text-decoration: none;
+    letter-spacing: 3.64px;
+    color:variable.$white;
+}
+
+
+p {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    font-size: 2.2rem;
+    line-height: 3.2rem;
+    color:variable.$dark-grey;
+
+    @media(max-width:1275px) {
+        font-size:1.8rem;
+        line-height: 2.8rem;
+    }
+}
+
+ p.footer--paragraph__text {
+    width:43rem;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    color:variable.$white;
+
+    @media(max-width:1275px) {
+        width:28rem;
+        font-size:1.6rem;
+        line-height: 2.6rem;
+    }
+
+    @media(max-width:767px) {
+        width:31.1rem;
+    }
+}
+
+p.location--features__paragraph {
+    width:54rem;
+    color:variable.$white;
+
+    span {
+        display: block;
+    }
+
+    @media(max-width:1275px) {
+        width:39.8rem;
+    }
+
+    @media(max-width:767px) {
+        width:34.3rem;
+        margin-top:2rem;
+    }
+}
+
+

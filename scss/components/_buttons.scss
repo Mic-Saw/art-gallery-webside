@@ -1,0 +1,78 @@
+@use '../abstracts/variables' as variable;
+
+.btnLocation {
+    display:flex;
+    width:26rem;
+    height:7.2rem;
+
+    &:hover {
+        cursor:pointer;
+    }
+
+    &:hover &--left {
+        background-color: variable.$gold;
+        transition:.3s;
+    }
+
+    &:hover &--right {
+        background-color: variable.$almost-black;
+        transition:.3s;
+    }
+
+&--left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:20.4rem;
+    height: 7.2rem;
+    background-color: variable.$almost-black;
+
+
+}
+
+&--right {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:5.6rem;
+    height: 7.2rem;
+    background-color: variable.$gold;
+}
+}
+
+.btnHome {
+    display:flex;
+    width:26rem;
+    height:7.2rem;
+
+    &:hover {
+        cursor:pointer;
+    }
+
+    &:hover &--left {
+        background-color: variable.$gold;
+        transition:.3s;
+    }
+
+    &:hover &--right {
+        background-color: variable.$almost-black;
+        transition:.3s;
+    }
+    &--right {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        width:5.6rem;
+        height: 7.2rem;
+        background-color: variable.$gold;
+    }
+
+    &--left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:20.4rem;
+        height: 7.2rem;
+        background-color: variable.$almost-black;
+    }
+}

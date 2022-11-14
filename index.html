@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Art gallery website</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header--containerLeft"></div>
+      <div class="header--containerMiddle">
+        <picture>
+          <source
+            srcset="./assets/desktop/image-hero.jpg"
+            media="(min-width:1275px)"
+          />
+          <source
+            srcset="./assets/desktop/image-hero.jpg"
+            media="(min-width:767px)"
+          />
+          <img src="./assets/mobile/image-hero.jpg" alt="hero" />
+        </picture>
+      </div>
+      <div class="header--containerRight"></div>
+      <div class="header--features">
+        <div class="header--features__containerLeft">
+          <h1>Modern Art Gallery</h1>
+        </div>
+        <div class="header--features__containerRight">
+          <p>
+            The arts in the collection of the Modern Art Gallery all started
+            from a spark of inspiration. Will these pieces inspire you? Visit us
+            and find out.
+          </p>
+          <div class="btnLocation">
+            <div class="btnLocation--left">
+              <a href="#">Our location</a>
+            </div>
+            <div class="btnLocation--right">
+              <img src="./assets/icon-arrow-right.svg" alt="right" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="main--container-1">
+        <h2><span>Your day</span> at the gallery</h2>
+        <p>
+          Wander through our distinct collections and find new insights about
+          our artists. Dive into the details of their creative process.
+        </p>
+      </div>
+      <div class="main--container-2">
+        <picture>
+          <source
+            srcset="./assets/desktop/image-grid-1.jpg"
+            media="(min-width:1275px)"
+          />
+          <source
+            srcset="./assets/tablet/image-grid-1.jpg"
+            media="(min-width:767px)"
+          />
+          <img src="./assets/mobile/image-grid-1.jpg" alt="hero" />
+        </picture>
+      </div>
+      <div class="main--container-3">
+        <picture>
+          <source
+            srcset="./assets/desktop/image-grid-2.jpg"
+            media="(min-width:1275px)"
+          />
+          <source
+            srcset="./assets/tablet/image-grid-2.jpg"
+            media="(min-width:767px)"
+          />
+          <img src="./assets/mobile/image-grid-2.jpg" alt="hero" />
+        </picture>
+      </div>
+      <div class="main--container-4">
+        <picture>
+          <source
+            srcset="./assets/desktop/image-grid-3.jpg"
+            media="(min-width:1275px)"
+          />
+          <source
+            srcset="./assets/tablet/image-grid-3.jpg"
+            media="(min-width:767px)"
+          />
+          <img src="./assets/mobile/image-grid-3.jpg" alt="hero" />
+        </picture>
+      </div>
+      <div class="main--container-5">
+        <h2>Come &amp; be inspired</h2>
+        <p>
+          We’re excited to welcome you to our gallery and see how our
+          collections influence you.
+        </p>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer--header">
+        <h3 class="footer--header__text"><span>Modern</span> Art Gallery</h3>
+      </div>
+      <div class="footer--paragraph">
+        <p class="footer--paragraph__text">
+          The Modern Art Gallery is free to all visitors and open seven days a
+          week from 8am to 9pm. Find us at 99 King Street, Newport, USA.
+        </p>
+      </div>
+      <div class="footer--icons">
+        <img src="./assets/icon-facebook.svg" alt="facebook" />
+        <img src="./assets/icon-instagram.svg" alt="instagram" />
+        <img src="./assets/icon-twitter.svg" alt="twitter" />
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

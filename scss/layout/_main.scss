@@ -1,0 +1,116 @@
+@use '../abstracts/variables' as variable;
+
+.main {
+    display:grid;
+    grid-template-columns: 44.5rem 16rem 44.5rem;
+    grid-template-rows: 40rem 31.3rem 37.7rem;
+    gap:3rem;
+    width:111rem;
+    height: 115rem;
+    margin:18rem auto;
+
+    @media(max-width:1275px) {
+        grid-template-columns: 28rem 10.8rem 28rem;
+        grid-template-rows: 40rem 31.3rem 39.6rem;
+        gap:1.1rem;
+        width:69rem;
+        height: 113rem;
+        margin:12rem auto;
+    }
+
+    @media(max-width:767px) {
+        grid-template-columns: 34.3rem;
+        grid-template-rows: 32rem 22.3rem 48rem 20rem 29.3rem;
+        gap:1.6rem;
+        width:34.3rem;
+        height: 160.5rem;
+    }
+
+    &--container-1, &--container-5 {
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &--container-2,&--container-3,&--container-4 {
+        img {
+            width:100%;
+            height: 100%;
+        }
+    }
+
+    &--container-1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        padding: 6.5rem 9.6rem;
+        padding-left: 0;
+
+        @media(max-width:1275px) {
+            padding:5rem 5.5rem 5rem 0;
+        }
+
+        @media(max-width:767px) {
+            grid-column: 1/2;
+            grid-row: 2/3;
+            padding:1.6rem 0 0;
+
+            span {
+                display: block;
+            }
+        }
+    }
+
+    &--container-2 {
+        grid-column: 2/4;
+        grid-row: 1/2;
+
+        @media(max-width:767px) {
+            grid-column: 1/2;
+            grid-row:1/2;
+        }
+    }
+
+    &--container-3 {
+        grid-column: 1/3;
+        grid-row: 2/4;
+
+        @media(max-width:767px) {
+            grid-column: 1/2;
+            grid-row: 3/4;
+        }
+    }
+
+    &--container-4 {
+        grid-column: 3/4;
+        grid-row: 2/3;
+
+        @media(max-width:767px) {
+            grid-column: 1/2;
+            grid-row: 4/5;
+        }
+    }
+
+    &--container-5 {
+        grid-column: 3/4;
+        grid-row: 3/4;
+        padding: 6.5rem 4.8rem;
+        background-color:variable.$almost-black;
+        h2, p {
+            color:variable.$white;
+        }
+
+        @media(max-width:1275px) {
+            padding:8.5rem 2.8rem;
+        }
+
+        @media(max-width:767px) {
+            grid-column: 1/2;
+            grid-row: 5/6;
+            padding:4.8rem 2.4rem;
+        }
+    }
+
+
+
+
+}
